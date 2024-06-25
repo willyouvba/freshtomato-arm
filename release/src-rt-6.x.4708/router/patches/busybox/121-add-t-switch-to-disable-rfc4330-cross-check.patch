@@ -37,7 +37,7 @@
   */
  #define BIGPOLL         9       /* 2^9 sec ~= 8.5 min */
 -#define MAXPOLL         12      /* maximum poll interval (12: 1.1h, 17: 36.4h). std ntpd uses 17 */
-+#define MAXPOLL         16      /* maximum poll interval (12: 1.1h, 17: 36.4h). std ntpd uses 17 */
++#define MAXPOLL         10      /* maximum poll interval (12: 1.1h, 10: 17m). std ntpd uses 10 */
  /* Actively lower poll when we see such big offsets.
   * With SLEW_THRESHOLD = 0.125, it means we try to sync more aggressively
   * if offset increases over ~0.04 sec
